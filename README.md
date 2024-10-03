@@ -1,1 +1,1 @@
-Math 1C Notecard 2 Equations https://github.com/tpate0562/MATH-1C-Notecard/blob/main/MATH%201C%20Notecard.pdf
+Math 1C Notecard 2 Equations see MATH 1C Notecard.pdf 
