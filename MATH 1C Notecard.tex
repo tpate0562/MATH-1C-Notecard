@@ -13,13 +13,19 @@
 \usepackage{cancel}
 \usepackage{gensymb}
 \usepackage[margin = 1.35in]{geometry}
+\AtBeginEnvironment{document}{\everymath{\displaystyle}}
 \title{MATH 1C Notecard}
 \date{10/3/2024}
 \author{Tejas Patel}
 \begin{document}
 \maketitle
-\tableofcontents
 \section*{15.1 Double Integrals over Rectangles}
+The single variable definite integral: $\int_{a}^{b} f(x) dx = \lim_{n\to\infty} \sum_{i=1}^{n} f(x^*_i) \Delta x$
+\\ Volume as a Double Riemann Sum: $V \approx \sum_{i=1}^{m}\sum_{j=1}^{n} f(x^*_{ij}, y^*_{ij}) \Delta A$
+\\ Volume as a Double Integral: $\int\int_{R}f(x,y) dA = \sum_{i=1}^{m}\sum_{j=1}^{n} f(x^*_{ij}, y^*_{ij}) \Delta A$
+\subsection*{Fubini's Theorem}
+If $f$ is continuous on the rectangle $R=\{(x,y) \; | \; a \leq x \leq b,c\leq y \leq d\}$
+\\[0.1in]then it is known $\iint\limits_{R} f(x,y)dA = \int_{a}^{b}\int_{c}^{d}f(x,y)\; dy \; dx = \int_{c}^{d}\int_{a}^{b} f(x,y) \; dx \; dy$
 \section*{15.2 Double Integrals over General Regions}
 \section*{15.3 Double Integrals in Polar Coordinates}
 \section*{15.4 Applications of Double Integrals}
