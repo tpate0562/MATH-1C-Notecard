@@ -32,7 +32,19 @@ In the special case that $f(x,y)$ can be factored as a product of a function of 
 \subsection*{Average Value}
 The average value of a function $f$ of two variables defined on a rectangle R is:
 \\$$ f_{avg}=\frac{1}{A(R)} \iint\limits_{R} f(x,y)dA$$ where A(R) is the area of R.
+\pagebreak
 \section*{15.2 Double Integrals over General Regions}
+$$
+F(x,y)=\begin{cases}
+			f(x,y) & \text{if $(x,y)$ s in }D\\
+            0 & \text{if $(x,y)$ is in $R$ but not in }D
+		 \end{cases}
+$$
+$$\iint\limits_{D} f(x,y)\; dA =\iint\limits_{D} F(x,y)\; dA $$
+If $f$ is continuous on a Type I region $D$ such that the fixed bounds are vertical, \\$D=\{(x,y)\; | \; a\leq x \leq b,\; g_1(x)\leq y \leq g_2(x)\}$, then 
+$$\iint\limits_{D} f(x,y) \; dA = \int_{a}^{b} \int_{g_1(x)}^{g_2(x)} f(x,y) \; dy \; dx$$
+\\If $f$ is continuous on a Type II region $D$ such that the fixed bounds are horizontal, \\$D=\{(x,y)\; | \; c\leq x \leq d,\; h_1(x)\leq y \leq h_2(x)\}$, then 
+$$\iint\limits_{D} f(x,y) \; dA = \int_{a}^{b} \int_{h_1(x)}^{h_2(x)} f(x,y) \; dx \; dy$$
 \section*{15.3 Double Integrals in Polar Coordinates}
 \section*{15.4 Applications of Double Integrals}
 \section*{15.5 Surface Area}
