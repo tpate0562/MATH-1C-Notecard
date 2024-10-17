@@ -1,0 +1,74 @@
+ %!TeX root = Template.tex
+\documentclass{article}
+\usepackage[dvipsnames, svgnames, x11names]{xcolor}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{setspace}
+\usepackage{units}
+\usepackage{graphicx}
+\usepackage{amsopn}
+\usepackage{bbding}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{cancel}
+\usepackage{gensymb}
+\usepackage[margin = 1.35in]{geometry}
+\AtBeginEnvironment{document}{\everymath{\displaystyle}}
+\title{MATH 1C Test 2 Notecard}
+\date{10/3/2024}
+\author{Tejas Patel}
+\begin{document}
+\maketitle
+\section*{15.1 Double Integrals over Rectangles}
+The single variable definite integral: $\int_{a}^{b} f(x) dx = \lim_{n\to\infty} \sum_{i=1}^{n} f(x^*_i) \Delta x$
+\\ Volume as a Double Riemann Sum: $V \approx \sum_{i=1}^{m}\sum_{j=1}^{n} f(x^*_{ij}, y^*_{ij}) \Delta A$
+\\ Volume as a Double Integral: $\int\int_{R}f(x,y) dA = \sum_{i=1}^{m}\sum_{j=1}^{n} f(x^*_{ij}, y^*_{ij}) \Delta A$
+\subsection*{Fubini's Theorem}
+If $f$ is continuous on the rectangle $R=\{(x,y) \; | \; a \leq x \leq b,c\leq y \leq d\}$
+\\[0.1in]then it is known $\iint\limits_{R} f(x,y)dA = \int_{a}^{b}\int_{c}^{d}f(x,y)\; dy \; dx = \int_{c}^{d}\int_{a}^{b} f(x,y) \; dx \; dy$
+\subsection*{Special Case}
+In the special case that $f(x,y)$ can be factored as a product of a function of $x$ only and a function of $y$ only then it is known the following is true:
+\\[0.1in] $\iint\limits_{R} g(x)\,h(y)\,dA =\int_{a}^{b}g(x)\; dx\, \int_{c}^{d} h(y)\; dy$
+\subsection*{Average Value}
+The average value of a function $f$ of two variables defined on a rectangle R is:
+\\$$ f_{avg}=\frac{1}{A(R)} \iint\limits_{R} f(x,y)dA$$ where A(R) is the area of R.
+\pagebreak
+\section*{15.2 Double Integrals over General Regions}
+$$
+F(x,y)=\begin{cases}
+			f(x,y) & \text{if $(x,y)$ s in }D\\
+            0 & \text{if $(x,y)$ is in $R$ but not in }D
+		 \end{cases}
+$$
+$$\iint\limits_{D} f(x,y)\; dA =\iint\limits_{D} F(x,y)\; dA $$
+If $f$ is continuous on a Type I region $D$ such that the fixed bounds are vertical, \\$D=\{(x,y)\; | \; a\leq x \leq b,\; g_1(x)\leq y \leq g_2(x)\}$, then 
+$$\iint\limits_{D} f(x,y) \; dA = \int_{a}^{b} \int_{g_1(x)}^{g_2(x)} f(x,y) \; dy \; dx$$
+\\If $f$ is continuous on a Type II region $D$ such that the fixed bounds are horizontal, \\$D=\{(x,y)\; | \; c\leq x \leq d,\; h_1(x)\leq y \leq h_2(x)\}$, then 
+$$\iint\limits_{D} f(x,y) \; dA = \int_{a}^{b} \int_{h_1(x)}^{h_2(x)} f(x,y) \; dx \; dy$$
+\section*{15.3 Double Integrals in Polar Coordinates}
+$$\iint\limits_{R} f(x,y) \; dA = \int_{\alpha}^{\beta} \int_{a}^{b} f(r\cos \theta,  r\sin \theta)\, r \; dr \; d\theta$$
+\textbf{Put all half angle and double angle identities on notecard}
+If $f$ is continuous on a polar region of the form $$D\; = \; \{ (r,\theta )|\alpha \leq \theta \leq \beta , \, h_1(\theta) \leq r \leq h_2(\theta)\}$$
+
+\section*{15.4 Applications of Double Integrals}
+\begin{center}
+	Electric Charge
+\end{center}
+$$Q= \iint\limits_{D} \sigma(x,y) \; dA$$
+\begin{center} {Center of Mass of a Lamina}\end{center}[0.1in]
+$\bar{x} = \frac{M_y}{m} = \frac{1}{m} \iint\limits_D x\rho (x,y)\; dA\;\;\;$ and $\;\;\; \bar{y} = \frac{M_x}{m} = \frac{1}{m} \iint\limits_D y\rho (x,y)\; dA$
+where $$m = \iint\limits_D \rho (x,y)\; dA$$
+\pagebreak
+\section*{15.5 Surface Area}
+The surface area with equation $z=f(x,y),(x,y)\epsilon D$ where $f_x$ and $f_y$ are continuous is
+$$A(S) = \iint\limits_D \sqrt{[f_x(x,y)]^2+[f_y(x,y)]^2 + 1}\; dA$$
+$$A(S) = \iint\limits_D \sqrt{\left[\frac{\partial z}{\partial x}\right]^2+\left[\frac{\partial y}{\partial z}\right]^2 + 1}\; dA$$
+For the noteacrd:
+$$A(S) = \iint\limits_D \sqrt{\left[f_x\right]^2+\left[f_y\right]^2 + 1}\; dA$$
+\section*{15.6 Triple Integrals}
+\section*{15.7 Triple Integrals in Cylndrical Coordinates}
+\section*{15.8 Triple Integrals in Spherical Coordinates}
+\section*{15.9 Change of Variables in Multiple Integrals}
+
+
+\end{document}
