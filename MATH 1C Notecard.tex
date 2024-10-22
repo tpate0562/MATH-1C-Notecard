@@ -9,6 +9,7 @@
 \usepackage{amsopn}
 \usepackage{bbding}
 \usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage{hyperref}
 \usepackage{cancel}
 \usepackage{gensymb}
@@ -49,23 +50,29 @@ $$\iint\limits_{D} f(x,y) \; dA = \int_{a}^{b} \int_{h_1(x)}^{h_2(x)} f(x,y) \; 
 $$\iint\limits_{R} f(x,y) \; dA = \int_{\alpha}^{\beta} \int_{a}^{b} f(r\cos \theta,  r\sin \theta)\, r \; dr \; d\theta$$
 \textbf{Put all half angle and double angle identities on notecard}
 If $f$ is continuous on a polar region of the form $$D\; = \; \{ (r,\theta )|\alpha \leq \theta \leq \beta , \, h_1(\theta) \leq r \leq h_2(\theta)\}$$
-
+\\Identities: $x^2+y^2=r^2 \; \; \; x=r\cos\theta \; \; \; y=r\sin\theta$
 \section*{15.4 Applications of Double Integrals}
 \begin{center}
 	Electric Charge
 \end{center}
 $$Q= \iint\limits_{D} \sigma(x,y) \; dA$$
-\begin{center} {Center of Mass of a Lamina}\end{center}[0.1in]
+\begin{center} {Center of Mass of a Lamina}\end{center}
 $\bar{x} = \frac{M_y}{m} = \frac{1}{m} \iint\limits_D x\rho (x,y)\; dA\;\;\;$ and $\;\;\; \bar{y} = \frac{M_x}{m} = \frac{1}{m} \iint\limits_D y\rho (x,y)\; dA$
 where $$m = \iint\limits_D \rho (x,y)\; dA$$
 \pagebreak
 \section*{15.5 Surface Area}
 The surface area with equation $z=f(x,y),(x,y)\epsilon D$ where $f_x$ and $f_y$ are continuous is
 $$A(S) = \iint\limits_D \sqrt{[f_x(x,y)]^2+[f_y(x,y)]^2 + 1}\; dA$$
-$$A(S) = \iint\limits_D \sqrt{\left[\frac{\partial z}{\partial x}\right]^2+\left[\frac{\partial y}{\partial z}\right]^2 + 1}\; dA$$
+$$A(S) = \iint\limits_D \sqrt{\left[\frac{\partial z}{\partial x}\right]^2+\left[\frac{\partial z}{\partial y}\right]^2 + 1}\; dA$$
 For the noteacrd:
 $$A(S) = \iint\limits_D \sqrt{\left[f_x\right]^2+\left[f_y\right]^2 + 1}\; dA$$
 \section*{15.6 Triple Integrals}
+$$\iiint\limits_{B} f(x,y,z)\; dV = \lim_{l,m,n \rightarrow \infty} \displaystyle\sum_{i=1}^{l}\sum_{j=1}^{m}\sum_{k=1}^{n} f(x^*_{ijk},y^*_{ijk},z^*_{ijk}) \; \Delta V \; \; \text{Wont need on notecard}$$
+$$\iiint\limits_{B} f(x,y,z)\; dV = \int_{r}^{s} \int_{c}^{d} \int_{a}^{b} f(x,y,z) \; dx \; dy \; dz$$
+Solutions for general regions:
+$$\text{For a shadow on the}\,  x,y \, \text{plane: }\iiint\limits_{B} f(x,y,z)\; dV =  \iint\limits_D \left[ \int_{u_1(x,y)}^{u_2(x,y)} f(x,y,z) \; dz \right] \; dA $$
+$$\text{For a shadow on the}\,  y,z \, \text{plane: }\iiint\limits_{B} f(x,y,z)\; dV =  \iint\limits_D \left[ \int_{u_1(y,z)}^{u_2(y,z)} f(x,y,z) \; dx \right] \; dA $$
+$$\text{For a shadow on the}\,  x,z \, \text{plane: }\iiint\limits_{B} f(x,y,z)\; dV =  \iint\limits_D \left[ \int_{u_1(x,z)}^{u_2(x,z)} f(x,y,z) \; dy \right] \; dA $$
 \section*{15.7 Triple Integrals in Cylndrical Coordinates}
 \section*{15.8 Triple Integrals in Spherical Coordinates}
 \section*{15.9 Change of Variables in Multiple Integrals}
