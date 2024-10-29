@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1729785612.59097 "/Users/tejaspatel/Desktop/LaTeX Projects/MATH 1C Notecard/MATH 1C Notecard.tex" "MATH 1C Notecard.pdf" "MATH 1C Notecard" 1729785613.74553 0
-  "/Users/tejaspatel/Desktop/LaTeX Projects/MATH 1C Notecard/MATH 1C Notecard.tex" 1729785612.33653 5436 796e2e1bc83e7a4bbc01d5f7f73eff89 ""
+["pdflatex"] 1730214660.95424 "/Users/tejaspatel/Desktop/LaTeX Projects/MATH 1C Notecard/MATH 1C Notecard.tex" "MATH 1C Notecard.pdf" "MATH 1C Notecard" 1730214662.10678 0
+  "/Users/tejaspatel/Desktop/LaTeX Projects/MATH 1C Notecard/MATH 1C Notecard.tex" 1730214660.17064 5822 380e511050b03d6f04bb6d2a34839093 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -212,9 +212,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1729555295.99067 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1729555229 8221428 380a9ae05887af09f5a76ce7a01b05d8 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "MATH 1C Notecard.aux" 1729785613.64837 162 59504cb8f8bee0a3f0488d753cb23a1e "pdflatex"
-  "MATH 1C Notecard.out" 1729785613.44098 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "MATH 1C Notecard.tex" 1729785612.33653 5436 796e2e1bc83e7a4bbc01d5f7f73eff89 ""
+  "MATH 1C Notecard.aux" 1730214662.0101 162 59504cb8f8bee0a3f0488d753cb23a1e "pdflatex"
+  "MATH 1C Notecard.out" 1730214661.8017 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "MATH 1C Notecard.tex" 1730214660.17064 5822 380e511050b03d6f04bb6d2a34839093 ""
   (generated)
   "MATH 1C Notecard.aux"
   "MATH 1C Notecard.log"
